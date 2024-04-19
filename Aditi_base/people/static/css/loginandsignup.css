@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container{
+    margin: 20px 20px;
+    padding: 20px 20px;
+    border: green 2px solid;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 5px 5px;
+}
+.inptrow{
+    display: flex;
+    align-items: center;
+    margin: 3px 3px
+}
+.heading{
+    font-size: 25px;
+    margin: 20px 0px;
+}
+.logininput{
+    padding: 10px 20px;
+}
+
+.loginbtn{
+    padding: 9px 14px;
+    margin: 6px -1px;
+    color: white;
+    border: green 2px solid;
+    font-size: 15px;
+    background-color: green;
+}
+
+/* this is to be used for alerting whemn password goes wrong */
+.alert{
+    color: red;
+    margin: 0px 5px;
+}

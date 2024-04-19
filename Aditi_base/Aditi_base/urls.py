@@ -17,8 +17,19 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from people.views import *
+from peopleprofile.views import *
+from django.contrib.auth import views as auth_views
 
 urlpatterns = [
+    # admin site urls here
     path('admin/', admin.site.urls),
-    path("", home ,name="home")
+
+    # urls of people app here
+    path("", home ,name="home"),
+    path('loggingin', loggingin,name='login'),
+    path('logout', logout_view, name='logout'),
+    path('signup',signup,name='signup'),
+
+    # urls of peopleprofile app
+    path("land",land,name='land')
 ]

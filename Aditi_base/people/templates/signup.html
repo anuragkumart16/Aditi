@@ -9,14 +9,16 @@
 </head>
 <body>
     <div class="container">
-        <div class="row"><p class="heading">Login Form</p></div>
-        <form action="loggingin" method="post">
+        <div class="row"><p class="heading">Signup Form</p></div>
+        <form action="signup" method="post">
             {% csrf_token %}
             {% if error_message %}
             <div class="alert">
                 {{ error_message }}
             </div>
             {% endif %}
+            <div class="row"><label for="email">Email</label></div>
+            <div class="inptrow"><input type="email" name="email" id="email" class="logininput"></div>
             <div class="row">
                 <label for="username">Username</label>
             </div>
@@ -32,15 +34,13 @@
                 <input type="password" name="password" id="password" class="logininput">
             </div>
             <div class="row">
-                <button class="loginbtn" type="submit">Login</button>
+                <button class="loginbtn" type="submit">Signup</button>
             </div>
             <div class="row">
-                <label>Don't have an account? 
+                <label>Already have an account? <a href="loggingin">Login!</a> 
                 </label>
             </div>
-            <div class="row">
-                <label >Create one <a href="signup">here!</a></label>
-            </div>
+            
         </form>
 
     </div>
