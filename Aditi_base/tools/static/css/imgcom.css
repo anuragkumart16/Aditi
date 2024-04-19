@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    border: 2px green solid;
+    margin: 10px 0px;
+    padding: 20px 20px;
+}
+.row{
+    display: flex;
+    margin: 10px 5px;
+}
+.heading{
+    font-size: 30px;
+}
+#file{
+    padding: 10px 10px;
+    width: fit-content;
+    border: 1px green solid;
+}
+
+.imgsize{
+    padding: 5px 5px;
+
+}
+.inputbtn{
+    background-color: green;
+    padding: 10px 10px;
+    color: white;
+    border: green 2px solid;
+    
+}
+#progress{
+    height: 30px;
+}

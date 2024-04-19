@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.urls import path
 from people.views import *
 from peopleprofile.views import *
+from tools.views import *
 from django.contrib.auth import views as auth_views
 
 urlpatterns = [
@@ -31,5 +32,10 @@ urlpatterns = [
     path('signup',signup,name='signup'),
 
     # urls of peopleprofile app
-    path("land",land,name='land')
+    path("land",land,name='land'),
+
+    # urls of tools
+    path("imagecompressor",imgcompressor,name="imagecompressor"),
+    path('compress',compress,name='compress'),
+    path('downloading',downloading,name='downloading'),
 ]
